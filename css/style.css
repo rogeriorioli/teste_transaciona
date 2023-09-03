@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  background-image: url(../images/background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 23% 50%;
+  min-height: 100vh;
+}
+
+.main-container {
+  max-width: 1360px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.text-red {
+  color: #FF352B;
+}
+.text-purple {
+  color: #5D2DCF;
+}
+.text-dark-purple {
+  color: #1F0A54;
+}
+.text-dark {
+  color: #000;
+}
+.text-white {
+  color: #fff;
+}
+.text-gray {
+  color: #8e8e8e;
+}
+
+.bg-red {
+  background-color: #FF352B;
+}
+.bg-purple {
+  background-color: #5D2DCF;
+}
+.bg-dark-purple {
+  background-color: #1F0A54;
+}
+.bg-dark {
+  background-color: #000;
+}
+.bg-white {
+  color: #fff;
+}
+
+.header {
+  border-top: 4px solid #5D2DCF;
+  padding: 35px 0;
+}
+@media screen and (max-width: 468px) {
+  .header .logo svg {
+    max-width: 168px;
+  }
+}
+.header .call-to-action {
+  width: 169px;
+  height: 35px;
+  background-color: #FF352B;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.header .call-to-action:hover {
+  opacity: 0.8;
+}
+.header .call-to-action a {
+  color: #fff;
+  font-size: 13px;
+}
+
+.hero h2 {
+  color: #5D2DCF;
+}
+.hero h2 span {
+  position: relative;
+  z-index: 9;
+}
+.hero h2 span:before {
+  content: " ";
+  position: absolute;
+  width: 115%;
+  height: 30px;
+  bottom: 10px;
+  left: 0;
+  border-bottom: 22px solid #ff352b;
+  border-right: 35px solid transparent;
+  z-index: -1;
+}
+@media screen and (max-width: 468px) {
+  .hero h2 span::before {
+    bottom: -1px;
+  }
+}
+
+.contact {
+  background-color: #1F0A54;
+  position: relative;
+}
+.contact:after {
+  content: "";
+  background-color: #FF352B;
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  font-size: 192px;
+  top: -25px;
+  left: 28%;
+  border-radius: 50%;
+}
+@media screen and (max-width: 468px) {
+  .contact {
+    overflow: hidden;
+  }
+  .contact::after {
+    display: none;
+  }
+}
+.contact .bg-image {
+  min-height: 650px;
+  background-image: url("../images/bgcontato.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact .form {
+  position: relative;
+}
+.contact .form-container {
+  position: relative;
+}
+.contact .form-container::before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  right: -41px;
+  width: 37px;
+  height: 37px;
+  background-image: url("../images/plus.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 468px) {
+  .contact .form-container::before {
+    display: none;
+  }
+}
+.contact .form-group {
+  position: relative;
+}
+.contact .form-field {
+  font-weight: 100;
+  color: #5D2DCF;
+  padding: 27px 10px 8px 10px;
+  font-size: 15px;
+  line-height: 24px;
+}
+.contact .form-field:not(:-moz-placeholder-shown) + label {
+  font-weight: 100;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #8e8e8e;
+}
+.contact .form-field:focus + label, .contact .form-field:not(:placeholder-shown) + label {
+  font-weight: 100;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #8e8e8e;
+}
+.contact .form-textarea {
+  font-weight: 400;
+  color: #5D2DCF;
+  padding: 27px 10px 8px 10px;
+  font-size: 15px;
+  line-height: 24px;
+  height: 120px;
+}
+.contact .form-textarea:not(:-moz-placeholder-shown) + label {
+  font-weight: 100;
+  margin-top: 8px;
+  font-size: 15px;
+  color: #8e8e8e;
+}
+.contact .form-textarea:focus + label, .contact .form-textarea:not(:placeholder-shown) + label {
+  font-weight: 100;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #8e8e8e;
+}
+.contact .form-label {
+  position: absolute;
+  top: 0;
+  margin-top: 20px;
+  margin-left: 10px;
+  color: #000;
+  font-weight: 100;
+  font-size: 15px;
+  pointer-events: none;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+}
+
+/*# sourceMappingURL=style.css.map */

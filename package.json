@@ -1,0 +1,16 @@
+{
+  "name": "teste_transaciona",
+  "version": "1.0.0",
+  "author": "@rogeriorioli",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "sass --watch ./sass/global.scss ./css/style.css"
+  },
+  "dependencies": {
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "sass": "^1.66.1"
+  }
+}

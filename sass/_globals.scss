@@ -1,0 +1,57 @@
+body {
+  font-family: $fonts;
+  background-color: $primary-color;
+  background-image: url(../images/background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 23% 50%;
+  min-height: calc(100vh);
+}
+
+.main-container {
+  max-width: 1360px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.text {
+  &-red {
+    color: $red;
+  }
+  &-purple {
+    color: $purple;
+  }
+  &-dark-purple {
+    color: $darkPurple;
+  }
+  &-dark {
+    color: $dark;
+  }
+  &-white {
+    color: $primary-color;
+  }
+  &-gray {
+    color: $gray;
+  }
+}
+.bg {
+  &-red {
+    background-color: $red;
+  }
+
+  &-purple {
+    background-color: $purple;
+  }
+
+  &-dark-purple {
+    background-color: $darkPurple;
+  }
+
+  &-dark {
+    background-color: $dark;
+  }
+
+  &-white {
+    color: $primary-color;
+  }
+}

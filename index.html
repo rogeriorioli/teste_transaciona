@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaciona Gestão de Carteiras Virtuais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.confg.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="main-container flex justify-between items-center row">
+        <div class="logo">
+          <svg
+            width="262"
+            height="48"
+            viewBox="0 0 262 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_0_443)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M36.7796 27.5401L36.7513 39.1306C36.7499 40.191 35.7621 40.9735 34.7298 40.7329L4.37831 31.9556L25.4824 22.6872L35.683 25.8423C36.4366 26.0126 36.7812 26.7668 36.7796 27.5401Z"
+                fill="#FF352B"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M41.2735 18.8954L52.5123 5.81861C52.8602 5.42098 52.7706 4.80542 52.3239 4.52376L41.0838 0.432624C40.5101 0.070656 39.7603 0.483408 39.7603 1.16112V2.26968L1.11634 16.2139C1.09392 16.2211 1.0715 16.2287 1.04903 16.2376C0.496398 16.4386 0.102025 16.9691 0.102025 17.5904V29.6288C0.102025 29.6945 0.10653 29.7587 0.11554 29.8211C0.209615 30.526 0.81461 31.0697 1.54643 31.0697C1.56885 31.0697 1.59127 31.0697 1.61221 31.0684C1.72711 31.0635 1.83772 31.0443 1.94224 31.0145L2.10807 30.9563C2.1089 30.9563 2.10964 30.956 2.11037 30.9557C2.11108 30.9554 2.11179 30.9551 2.11258 30.9551L25.1936 22.5953L39.7603 17.4265V18.3293C39.7603 19.1251 40.7477 19.4945 41.2735 18.8954ZM36.9043 39.2941V27.2554C36.9043 26.4598 36.2576 25.8147 35.4599 25.8147C35.3224 25.8147 35.1895 25.8341 35.064 25.8697L34.8983 25.9279C34.8976 25.9279 34.8968 25.9283 34.8961 25.9287C34.8953 25.9291 34.8945 25.9295 34.8937 25.9295L22.7275 29.9521V29.0198C22.7275 28.224 21.7386 27.8546 21.2143 28.4534L9.97555 41.5303C9.62613 41.9281 9.71559 42.5421 10.1638 42.825L21.4025 46.9164C21.9776 47.2785 22.7275 46.8657 22.7275 46.1878V45.1017L35.8901 40.6709L35.8992 40.6678C35.9187 40.6611 35.938 40.6545 35.9573 40.6468C36.5099 40.446 36.9043 39.9151 36.9043 39.2941Z"
+                fill="#5D2DCF"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M183.192 16.3253C183.192 14.3276 184.81 12.7082 186.806 12.7082C188.801 12.7082 190.419 14.3276 190.419 16.3253C190.419 18.3226 188.801 19.9418 186.806 19.9418C184.81 19.9418 183.192 18.3226 183.192 16.3253Z"
+                fill="#FF352B"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M61.1702 33.5286V26.2983H59.2303C58.8289 26.2983 58.5033 25.9736 58.5033 25.5733V21.9951C58.5033 21.5946 58.8289 21.2701 59.2303 21.2701H61.1702V17.4931C61.1702 17.0925 61.4955 16.7679 61.897 16.7679H66.7033C67.1049 16.7679 67.4303 17.0925 67.4303 17.4931V21.2701H70.8547C71.2561 21.2701 71.5817 21.5946 71.5817 21.9951V25.5733C71.5817 25.9736 71.2561 26.2983 70.8547 26.2983H67.4303V32.3125C67.4303 33.5613 67.9903 34.087 69.1435 34.087C69.6376 34.087 70.1198 34.0044 70.5903 33.86C71.0515 33.7186 71.5158 34.0761 71.5158 34.5576V37.9485C71.5158 38.2276 71.3575 38.4841 71.105 38.6032C70.0425 39.1042 68.7071 39.4114 67.1665 39.4114C63.4105 39.4114 61.1702 37.7679 61.1702 33.5286ZM74.995 21.2701H79.8317C80.2248 21.2701 80.5434 21.5879 80.5434 21.98V24.8525C81.502 22.57 83.0122 21.0399 85.6455 20.9692C85.9384 20.9613 86.1777 21.2029 86.1777 21.4953V27.0215C86.1777 27.3117 85.9415 27.5471 85.6504 27.5471C82.3886 27.5471 80.5434 29.4204 80.5434 33.5286V38.1184C80.5434 38.6326 80.1254 39.0494 79.6099 39.0494H75.2172C74.7015 39.0494 74.2835 38.6326 74.2835 38.1184V21.98C74.2835 21.5879 74.6021 21.2701 74.995 21.2701ZM86.6718 33.8897V33.9556C86.6718 37.505 89.2746 39.444 92.6682 39.444C95.0076 39.444 96.688 38.5565 97.9071 37.2095V38.1184C97.9071 38.6326 98.3251 39.0494 98.8406 39.0494H103.167C103.683 39.0494 104.101 38.6326 104.101 38.1184V28.829C104.101 26.3312 103.541 24.4911 102.19 23.1764C100.773 21.7631 98.5989 21.0074 95.403 21.0074C92.7498 21.0074 90.7885 21.4259 89.0053 22.0717C88.5425 22.2395 88.2891 22.7366 88.4268 23.2085L89.1932 25.8353C89.3411 26.3417 89.8813 26.6257 90.3823 26.458C91.6327 26.0402 92.8681 25.8054 94.3814 25.8054C96.7869 25.8054 97.9397 26.8573 97.9397 28.6977V28.9932C96.9185 28.6318 95.3041 28.303 93.6565 28.303C89.4721 28.303 86.6718 30.2094 86.6718 33.8897ZM98.0058 31.7866V32.6084C98.0058 34.3828 96.7208 35.5332 94.9087 35.5332C93.6237 35.5332 92.701 34.8103 92.701 33.5942V33.5286C92.701 32.2141 93.7553 31.3265 95.5676 31.3265C96.4901 31.3265 97.3798 31.5239 98.0058 31.7866ZM112.624 21.2701H108.231C107.715 21.2701 107.297 21.687 107.297 22.2012V38.1184C107.297 38.6326 107.715 39.0494 108.231 39.0494H112.624C113.139 39.0494 113.557 38.6326 113.557 38.1184V29.4204C113.557 27.4814 114.677 26.4299 116.193 26.4299C117.676 26.4299 118.697 27.4814 118.697 29.4204V38.1184C118.697 38.6326 119.115 39.0494 119.631 39.0494H124.024C124.539 39.0494 124.957 38.6326 124.957 38.1184V27.4159C124.957 23.3734 122.684 20.8759 118.895 20.8759C116.358 20.8759 114.71 22.2889 113.557 23.7678V22.2012C113.557 21.687 113.139 21.2701 112.624 21.2701ZM127.499 35.7417L128.501 34.1232C128.859 33.5444 129.609 33.3311 130.209 33.6542C131.953 34.5938 133.765 35.073 135.303 35.073C136.39 35.073 136.884 34.7444 136.884 34.1201V34.0545C136.884 33.364 135.896 33.0682 134.017 32.5427C130.492 31.6225 127.691 30.439 127.691 26.8573V26.7914C127.691 23.0121 130.723 20.9086 134.841 20.9086C136.974 20.9086 139.174 21.4161 141.022 22.3231C141.679 22.6452 141.932 23.451 141.584 24.0929L140.644 25.8228C140.323 26.4146 139.596 26.6668 138.982 26.3863C137.459 25.6894 135.923 25.2795 134.775 25.2795C133.82 25.2795 133.326 25.6411 133.326 26.134V26.1997C133.326 26.8898 134.347 27.2185 136.225 27.7771C139.75 28.7631 142.551 29.9792 142.551 33.4299V33.4956C142.551 37.4064 139.619 39.444 135.269 39.444C132.71 39.444 130.174 38.8215 127.95 37.5351C127.32 37.171 127.117 36.3592 127.499 35.7417ZM144.231 33.8897V33.9556C144.231 37.505 146.834 39.444 150.228 39.444C152.567 39.444 154.247 38.5565 155.466 37.2095V38.1184C155.466 38.6326 155.884 39.0494 156.4 39.0494H160.727C161.243 39.0494 161.661 38.6326 161.661 38.1184V28.829C161.661 26.3312 161.1 24.4911 159.749 23.1764C158.333 21.7631 156.158 21.0074 152.962 21.0074C150.309 21.0074 148.348 21.4259 146.565 22.0717C146.102 22.2395 145.849 22.7366 145.986 23.2085L146.753 25.8353C146.9 26.3417 147.441 26.6257 147.942 26.458C149.192 26.0402 150.427 25.8054 151.941 25.8054C154.346 25.8054 155.499 26.8573 155.499 28.6977V28.9932C154.478 28.6318 152.863 28.303 151.216 28.303C147.032 28.303 144.231 30.2094 144.231 33.8897ZM155.565 31.7866V32.6084C155.565 34.3828 154.28 35.5332 152.468 35.5332C151.183 35.5332 150.261 34.8103 150.261 33.5942V33.5286C150.261 32.2141 151.315 31.3265 153.127 31.3265C154.05 31.3265 154.939 31.5239 155.565 31.7866ZM164.131 30.1763V30.2419C164.131 35.2701 168.085 39.4767 173.456 39.4767C176.747 39.4767 178.948 38.3186 180.544 36.508C181.043 35.9419 180.932 35.0663 180.32 34.6242L178.122 33.0361C177.62 32.6734 176.939 32.7254 176.479 33.1408C175.721 33.8265 174.903 34.2188 173.785 34.2188C171.677 34.2188 170.227 32.4768 170.227 30.1763V30.1106C170.227 27.9416 171.709 26.1669 173.719 26.1669C174.831 26.1669 175.641 26.5382 176.333 27.2031C176.793 27.6459 177.501 27.7033 178.014 27.3226L180.267 25.6498C180.862 25.208 180.972 24.351 180.489 23.7898C178.962 22.0175 176.752 20.9086 173.686 20.9086C168.052 20.9086 164.131 25.1481 164.131 30.1763ZM185.027 21.2701H188.702C189.416 21.2701 189.995 21.8471 189.995 22.5591V37.7607C189.995 38.4725 189.416 39.0494 188.702 39.0494H185.027C184.314 39.0494 183.735 38.4725 183.735 37.7607V22.5591C183.735 21.8471 184.314 21.2701 185.027 21.2701ZM192.762 30.1763V30.2419C192.762 35.3032 196.881 39.4767 202.581 39.4767C208.314 39.4767 212.465 35.2374 212.465 30.1763V30.1106C212.465 25.0493 208.347 20.8759 202.647 20.8759C196.914 20.8759 192.762 25.1152 192.762 30.1763ZM206.37 30.1763V30.2419C206.37 32.378 204.92 34.1858 202.647 34.1858C200.439 34.1858 198.858 32.3453 198.858 30.1763V30.1106C198.858 27.9744 200.307 26.1669 202.581 26.1669C204.788 26.1669 206.37 28.0075 206.37 30.1763ZM220.427 21.2701H216.034C215.519 21.2701 215.101 21.687 215.101 22.2012V38.1184C215.101 38.6326 215.519 39.0494 216.034 39.0494H220.427C220.943 39.0494 221.361 38.6326 221.361 38.1184V29.4204C221.361 27.4814 222.481 26.4299 223.996 26.4299C225.479 26.4299 226.501 27.4814 226.501 29.4204V38.1184C226.501 38.6326 226.919 39.0494 227.434 39.0494H231.827C232.343 39.0494 232.761 38.6326 232.761 38.1184V27.4159C232.761 23.3734 230.487 20.8759 226.698 20.8759C224.161 20.8759 222.514 22.2889 221.361 23.7678V22.2012C221.361 21.687 220.943 21.2701 220.427 21.2701ZM235.1 33.9556V33.8897C235.1 30.2094 237.9 28.303 242.085 28.303C243.732 28.303 245.346 28.6318 246.368 28.9932V28.6977C246.368 26.8573 245.215 25.8054 242.809 25.8054C241.296 25.8054 240.06 26.0402 238.81 26.458C238.309 26.6257 237.769 26.3417 237.621 25.8353L236.855 23.2085C236.717 22.7366 236.97 22.2395 237.433 22.0717C239.216 21.4259 241.178 21.0074 243.831 21.0074C247.027 21.0074 249.201 21.7631 250.618 23.1764C251.969 24.4911 252.529 26.3312 252.529 28.829V38.1184C252.529 38.6326 252.111 39.0494 251.595 39.0494H247.268C246.753 39.0494 246.335 38.6326 246.335 38.1184V37.2095C245.116 38.5565 243.435 39.444 241.096 39.444C237.702 39.444 235.1 37.505 235.1 33.9556ZM246.434 32.6084V31.7866C245.808 31.5239 244.918 31.3265 243.995 31.3265C242.183 31.3265 241.129 32.2141 241.129 33.5286V33.5942C241.129 34.8103 242.051 35.5332 243.336 35.5332C245.149 35.5332 246.434 34.3828 246.434 32.6084ZM253.371 23.5199V23.4987C253.371 21.3957 255.083 19.6131 257.256 19.6131C259.428 19.6131 261.119 21.3743 261.119 23.477V23.4987C261.119 25.6014 259.407 27.3844 257.234 27.3844C255.062 27.3844 253.371 25.6229 253.371 23.5199ZM260.669 23.4987V23.477C260.669 21.5879 259.203 20.0401 257.256 20.0401C255.297 20.0401 253.82 21.609 253.82 23.4987V23.5199C253.82 25.4094 255.286 26.9572 257.234 26.9572C259.193 26.9572 260.669 25.3879 260.669 23.4987ZM255.543 21.3316H257.459C258.112 21.3316 258.561 21.5025 258.85 21.7907C259.085 22.0255 259.203 22.3351 259.203 22.7301V22.7513C259.203 23.3809 258.871 23.7975 258.358 24.0112L259.342 25.4415H258.026L257.191 24.1925H257.17H256.688V25.4415H255.543V21.3316ZM257.437 23.3066C257.833 23.3066 258.058 23.1249 258.058 22.826V22.8049C258.058 22.474 257.812 22.3136 257.427 22.3136H256.688V23.3066H257.437Z"
+                fill="#5D2DCF"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_443">
+                <rect width="262" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="call-to-action flex justify-center items-center">
+          <a href="#">Dúvidas de Cobranças?</a>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="main-container flex justify-center flex-col lg:flex-row py-8">
+        <div class="lg:w-2/3 flex flex-col justify-center">
+          <h2 class="text-4xl lg:text-7xl font-bold mb-4">
+            Gestão de <span>Carteiras</span> <br />
+            <span>Virtuais</span>
+          </h2>
+          <p class="font-thin lg:text-lg">
+            Infraestrutura de pagamentos e recebimentos instantâneos entre
+            usuários da plataforma, reconhecida por sua transparência e
+            segurança nas transações, graças a criptografia dos dados e
+            tecnologia embarcada.
+          </p>
+        </div>
+        <div class="hidden lg:w-1/3 lg:block">
+          <img src="images/icon-carteiras.svg" alt="" srcset="" />
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="main-container">
+        <div
+          class="card bg-white rounded-2xl flex justify-center flex-col p-4 lg:flex-row lg:p-12 mb-[63px]"
+        >
+          <div class="lg:w-2/3 flex flex-col justify-center text-dark">
+            <p class="text-red uppercase">minimizar chargebacks</p>
+            <h2 class="text-4xl font-medium my-7">Sistema Anti-Fraude</h2>
+            <p class="font-thin text-lg">
+              Graças a tecnologia de inteligência artificial, desenvolvemos um
+              rigoroso sistema antifraude, com o único objetivo de evitar o
+              número de chargebacks de suas vendas e maximizar a conversão e
+              faturamento de seu negócio.
+            </p>
+          </div>
+          <div class="hidden lg:w-1/3 lg:block">
+            <img src="images/ant-fraude.svg" alt="" srcset="" />
+          </div>
+        </div>
+        <div
+          class="card bg-white rounded-lg flex justify-center flex-col p-4 lg:flex-row-reverse lg:p-12 mb-[63px]"
+        >
+         <div class="lg:w-2/3 flex flex-col justify-center text-dark">
+            <p class="text-red uppercase">dados criptografados</p>
+            <h2 class="text-4xl font-medium my-7">Tecnologia e Segurança</h2>
+            <p class="font-thin text-lg">
+              Utilizamos criptografia de ponta a ponta, proteção contra ataques
+              DDos e diversas tecnologias em nuvem como Cloudflare e AWS.
+              Seguimos todas as regras e políticas de privacidade da LGPD (Lei
+              Geral de Proteção de Dados) e todos os funcionários são treinados
+              e autenticados com sistemas zero-trust para garantir a máxima
+              segurança dos dados.
+            </p>
+          </div>
+					<div class="lg:w-1/3 hidden lg:block">
+            <img src="images/tec-sec.svg" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact py-10 lg:py-20">
+      <div class="bg-image flex flex-col lg:flex-row py-10">
+        <div class="main-container flex flex-col lg:flex-row ">
+          <div class="lg:w-1/2 flex flex-col lg:justify-center">
+            <div class="first-content">
+              <p class="text-red uppercase">CONTATO</p>
+              <h2 class="text-4xl font-medium mt-7 text-white">
+                Dúvidas sobre Cobranças?
+              </h2>
+              <p class="font-thin text-md text-white">
+                Se você acredita ter sido cobrado indevidamente pela Transaciona
+                em sua fatura, por favor preencha o formulário ao lado que
+                iremos te ajudar.
+              </p>
+            </div>
+            <div class="second-content mt-10 lg:mt-40">
+              <p class="text-md font-normal font-weight-500 text-white text-center lg:text-left">
+                A Transaciona gerencia a cobrança para os sites
+              </p>
+              <div class="logos flex flex-row justify-between gap-1 lg:gap-6 my-4  ">
+                <img  class="w-1/3" src="images/camera_pv.svg" alt="camera prive"    />
+                <img class="w-1/3" src="images/camera_hot.svg" alt="camera hot"  />
+                <img class="w-1/3" src="images/fan_fever.svg" alt="fan fever"  />
+              </div>
+              <p class="font-thin text-md text-white text-center lg:text-left">
+                Lorem ipsum dolor sit amet confutatis dies irae dies illa solvet
+                saeclum in favillla test david cum sybilla quantus tremor est
+                venturus cuncta stricte discussurus.
+              </p>
+            </div>
+          </div>
+
+          <div class=" w-full lg:w-1/2 flex lg:justify-end mt-8">
+            <div class="form-container w-full lg:w-[463px]  rounded-lg bg-purple p-8">
+              <form action="">
+                <div class="form-group relative">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder=" "
+                    class="form-field flex flex-grow rounded-md w-full mb-2"
+                    required=""
+                  /><label class="form-label">Nome</label>
+                </div>
+                <div class="form-group relative">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder=" "
+                    class="form-field flex flex-grow rounded-md w-full mb-2"
+                    required=""
+                  /><label class="form-label ">E-mail</label>
+                </div>
+                <div class="form-group relative">
+                  <input
+                    type="text"
+                    name="assunto"
+                    placeholder=" "
+                    class="form-field flex flex-grow rounded-md w-full mb-2"	
+                    required=""
+                  /><label class="form-label ">Assunto: Cobrança / Pagamento</label>
+                </div>
+                <div class="form-group relative">
+                  <input
+                    type="text"
+                    name="name-payment"
+                    placeholder=" "
+                    class="form-field flex flex-grow rounded-md w-full mb-2"
+                    required=""
+                  /><label class="form-label ">Nome que aparece na cobrança</label>
+                </div>
+								<div class="form-group relative"><textarea name="message" placeholder=" " class="form-textarea flex flex-grow rounded-md w-full mb-7"
+										required=""></textarea><label class="form-label">Mensagem</label></div>
+              </form>
+							<button class="bg-red w-full flex justify-center items-center text-white font-thin py-4 rounded-md hover:opacity-70">
+									Enviar
+							</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		<footer>
+<div class="py-65 bg-white py-16">
+	<div class="container mx-auto">
+		<div class="flex main-container flex-col items-center lg:flex-row mx-auto">
+			<div class="flex lg:justify-around items-center text-center">
+				<img src="images/logo-footer.svg" alt="Transaciona">
+				<span class="footer-year text-purple ml-2">2023</span>
+			</div>
+			<div class="flex flex-grow align-center justify-end mt-4">
+				<ul class="flex flex-row font-thin gap-6">
+					<li>
+						<a href="" class="text-gray">
+							Política de Privacidade
+						</a>
+					</li>
+					<li>
+						<a href="" class="text-gray">
+							Política de Cookies
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		</footer>
+  </body>
+</html>

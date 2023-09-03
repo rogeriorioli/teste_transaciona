@@ -1,0 +1,112 @@
+.contact {
+  background-color: $darkPurple;
+  position: relative;
+  &:after {
+    content: "";
+    background-color: $red;
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    font-size: 192px;
+    top: -25px;
+    left: 28%;
+    border-radius: 50%;
+  }
+  @media screen and (max-width: 468px) {
+    overflow: hidden;
+    &::after {
+      display: none;
+    }
+  }
+  .bg-image {
+    min-height: 650px;
+    background: {
+      image: url("../images/bgcontato.png");
+      size: cover;
+      repeat: no-repeat;
+    }
+  }
+  .form {
+    &-container {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -40px;
+        right: -41px;
+        width: 37px;
+        height: 37px;
+        background: {
+          image: url("../images/plus.svg");
+          size: cover;
+          repeat: no-repeat;
+        }
+      }
+      @media screen and (max-width: 468px) {
+        &::before {
+          display: none;
+        }
+      }
+    }
+    position: relative;
+    &-group {
+      position: relative;
+    }
+    &-field {
+      font-weight: 100;
+      color: $purple;
+      padding: 27px 10px 8px 10px;
+      font-size: 15px;
+      line-height: 24px;
+      &:not(:-moz-placeholder-shown) + label {
+        font-weight: 100;
+        margin-top: 8px;
+        font-size: 12px;
+        color: $gray;
+      }
+      &:focus + label,
+      &:not(:placeholder-shown) + label {
+        font-weight: 100;
+        margin-top: 8px;
+        font-size: 12px;
+        color: $gray;
+      }
+    }
+
+    &-textarea {
+      font-weight: 400;
+      color: $purple;
+      padding: 27px 10px 8px 10px;
+      font-size: 15px;
+      line-height: 24px;
+      height: 120px;
+      &:not(:-moz-placeholder-shown) + label {
+        font-weight: 100;
+        margin-top: 8px;
+        font-size: 15px;
+        color: $gray;
+      }
+      &:focus + label,
+      &:not(:placeholder-shown) + label {
+        font-weight: 100;
+        margin-top: 8px;
+        font-size: 12px;
+        color: $gray;
+      }
+    }
+
+    &-label {
+      position: absolute;
+      top: 0;
+      margin-top: 20px;
+      margin-left: 10px;
+      color: $dark;
+      font-weight: 100;
+      font-size: 15px;
+      pointer-events: none;
+      transition: all 0.3s ease-out;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+    }
+  }
+}

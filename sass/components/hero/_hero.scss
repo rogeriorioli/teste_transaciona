@@ -1,0 +1,25 @@
+.hero {
+  h2 {
+    color: $purple;
+    span {
+      position: relative;
+      z-index: 9;
+      &:before {
+        content: " ";
+        position: absolute;
+        width: 115%;
+        height: 30px; 
+        bottom: 10px;
+        left: 0;
+        border-bottom: 22px solid #ff352b;
+        border-right: 35px solid transparent;
+        z-index: -1;
+      }
+      @media screen and (max-width: 468px) {
+          &::before{
+            bottom: -1px;
+          }
+      }
+    }
+  }
+}
